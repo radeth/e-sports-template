@@ -1,2 +1,7 @@
 @import './settings';
 @import './../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './../../node_modules/leaflet/dist/leaflet.css';
+
+#map{
+    height: 600px;
+}
