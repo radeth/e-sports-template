@@ -31,12 +31,5 @@ function updateListOfMarkersAfterDrag(marker) {
   drawCords()
 }
 function drawCords(){
-    cords.innerHTML = '';
-    listOfMarkers.forEach(element=>{
-        cords.innerHTML += `<tr>
-        <th scope="row">${element.id}</th>
-        <td>${element.lat}</td>
-        <td>${element.lng}</td>
-      </tr>`
-    })
+    
 }

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 1 version",
@@ -13,6 +14,7 @@
     "maintained node versions",
     "not dead"
   ],
+  "homepage": "https://radeth.github.io/e-sports-template",
   "keywords": [],
   "author": "",
   "license": "ISC",
