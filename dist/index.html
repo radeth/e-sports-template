@@ -10,37 +10,47 @@
 <link href="main.css" rel="stylesheet"></head>
 
 <body>
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapse1" role="button">Map</a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapse2">Cords</button>
-      
-      </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapse1">
-              <div class="card card-body" id="map">
+  <div class="accordion" id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+           Map
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body" id="map">
          
-                </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapse2">
-            <div class="card card-body">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Latitude</th>
-                        <th scope="col">longitude</th>
-                      </tr>
-                    </thead>
-                    <tbody id="cords">
-                     
-                    </tbody>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" >
+            Cords
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Latitude</th>
+                <th scope="col">longitude</th>
+              </tr>
+            </thead>
+            <tbody id="cords">
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <script type="text/javascript" src="app.js"></script></body>
 
